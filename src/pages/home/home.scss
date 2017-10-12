@@ -1,0 +1,30 @@
+page-home {
+ion-slides.breaknews{
+    background:white;
+    height:35px;
+    width:100%;
+  
+}
+ion-slides.featured{
+    height:180px;
+    width:100%
+}
+.swiper-pagination {
+    padding: 3px;
+    bottom:0px;
+    .swiper-pagination-bullet {
+        background: #7b003d;
+        margin: 0 3px;
+    }
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "new";
+    font-size:20px;
+    color:#7b003d
+}
+
+.bg{
+    background: #dcdcdc;
+}
+
+}

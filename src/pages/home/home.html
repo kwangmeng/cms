@@ -1,0 +1,144 @@
+<ion-header>
+  <ion-navbar color="unimy">
+    <button ion-button menuToggle color="light">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>CMS @ CSE</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="bg">
+    <ion-slides class="breaknews" pager="false" loop autoplay="3000">
+        
+          <ion-slide>
+            <h2>Announcement</h2>
+          </ion-slide>
+        
+          <ion-slide>
+            <h2>Kenny is Awesome</h2>
+          </ion-slide>
+        
+          <ion-slide>
+            <h2>Kenny is too awesome</h2>
+          </ion-slide>
+        
+        </ion-slides>
+
+        <ion-slides class="featured" pager="true" paginationType="bullet" loop>
+            
+              <ion-slide>
+                <img src="http://localhost/cms/pic1.jpg">
+              </ion-slide>
+            
+              <ion-slide>
+                <img src="http://localhost/cms/pic1.jpg">
+              </ion-slide>
+            
+              <ion-slide>
+                <img src="http://localhost/cms/pic1.jpg">
+              </ion-slide>
+            
+            </ion-slides>
+
+
+            <ion-card>
+                  <ion-item>
+                    <ion-avatar item-start>
+                      <img src="assets/img/male.png">
+                    </ion-avatar>
+                    <h2>Batik Walk</h2>
+                    <p>Kelab Penyayang Unit</p>
+                  </ion-item>
+                
+                  <img src="http://localhost/cms/pic1.jpg">
+                
+                  <ion-card-content>
+                    <p>Do you interested in Fun Batik Walk organized by KPU? <br>tap here for more info. Like and comment</p>
+                  </ion-card-content>
+                
+                  <ion-row>
+                    <ion-col>
+                      <button ion-button icon-left clear small>
+                        <ion-icon name="thumbs-up"></ion-icon>
+                        <div>12 Likes</div>
+                      </button>
+                    </ion-col>
+                    <ion-col>
+                      <button ion-button icon-left clear small>
+                        <ion-icon name="text"></ion-icon>
+                        <div>4 Comments</div>
+                      </button>
+                    </ion-col>
+                  </ion-row>
+                </ion-card>
+
+                <ion-card>
+                    <ion-item>
+                      <ion-avatar item-start>
+                        <img src="assets/img/male.png">
+                      </ion-avatar>
+                      <h2>Start IOT</h2>
+                      <p>CSE</p>
+                    </ion-item>
+                  
+                    <img src="http://localhost/cms/pic1.jpg">
+                  
+                    <ion-card-content>
+                      <p>Whats IOT ? Interested to know more about IOT ? Sign up for the event now !</p>
+                    </ion-card-content>
+                  
+                    <ion-row>
+                      <ion-col>
+                        <button ion-button icon-left clear small>
+                          <ion-icon name="thumbs-up"></ion-icon>
+                          <div>12 Likes</div>
+                        </button>
+                      </ion-col>
+                      <ion-col>
+                        <button ion-button icon-left clear small>
+                          <ion-icon name="text"></ion-icon>
+                          <div>4 Comments</div>
+                        </button>
+                      </ion-col>
+                    </ion-row>
+                  </ion-card>
+
+
+                  <ion-card>
+                      <ion-item>
+                        <ion-avatar item-start>
+                          <img src="assets/img/male.png">
+                        </ion-avatar>
+                        <h2>Karnival Komuniti !</h2>
+                        <p>CSE</p>
+                      </ion-item>
+                    
+                      <img src="http://localhost/cms/pic1.jpg">
+                    
+                      <ion-card-content>
+                        <p>There is a carnival community happening ! Join now !</p>
+                      </ion-card-content>
+                    
+                      <ion-row>
+                        <ion-col>
+                          <button ion-button icon-left clear small>
+                            <ion-icon name="thumbs-up"></ion-icon>
+                            <div>12 Likes</div>
+                          </button>
+                        </ion-col>
+                        <ion-col>
+                          <button ion-button icon-left clear small>
+                            <ion-icon name="text"></ion-icon>
+                            <div>4 Comments</div>
+                          </button>
+                        </ion-col>
+                      </ion-row>
+                    </ion-card>
+
+                    <ion-infinite-scroll (ionInfinite)="loadMore($event)">
+                        <ion-infinite-scroll-content
+                        loadingSpinner="bubbles"
+                        loadingText="Loading more data...">
+                      </ion-infinite-scroll-content>
+                      </ion-infinite-scroll>
+</ion-content>
