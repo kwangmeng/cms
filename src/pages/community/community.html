@@ -10,15 +10,15 @@
 
 <ion-content>
     <ion-list>
-        <ion-item text-wrap>
+        <ion-item text-wrap (tap)="detail();">
           <ion-thumbnail item-start>
             <img src="assets/img/kpu.jpg">
           </ion-thumbnail>
           <h2>Kelab Penyayang UniMy</h2>
           <p>A really penyayang club - 130 members</p>
-          <button ion-button clear item-end color="unimy">View</button>
+          <button ion-button clear item-end color="unimy" >View</button>
         </ion-item>
-        <ion-item text-wrap>
+        <ion-item text-wrap (tap)="detail();">
             <ion-thumbnail item-start>
               <img src="assets/img/eco.jpg">
             </ion-thumbnail>
@@ -26,7 +26,7 @@
             <p>A really eco friendly club - 54 members</p>
             <button ion-button clear item-end color="unimy">View</button>
           </ion-item>
-          <ion-item text-wrap>
+          <ion-item text-wrap (tap)="detail();">
               <ion-thumbnail item-start>
                 <img src="assets/img/fx.jpg">
               </ion-thumbnail>
@@ -34,7 +34,7 @@
               <p>A really fx club - 20 members</p>
               <button ion-button clear item-end color="unimy">View</button>
             </ion-item>
-            <ion-item text-wrap>
+            <ion-item text-wrap (tap)="detail();">
                 <ion-thumbnail item-start>
                   <img src="assets/img/peers.jpg">
                 </ion-thumbnail>
@@ -42,7 +42,7 @@
                 <p>A really peers club - 60 members</p>
                 <button ion-button clear item-end color="unimy">View</button>
               </ion-item>
-              <ion-item text-wrap>
+              <ion-item text-wrap (tap)="detail();">
                   <ion-thumbnail item-start>
                     <img src="assets/img/esports.jpeg">
                   </ion-thumbnail>
