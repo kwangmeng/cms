@@ -27,4 +27,8 @@ export class ActivityPage {
   onInput(event){
     console.log(event);
   }
+
+  swipeEvent(event){
+    this.view = "grid";
+  }
 }

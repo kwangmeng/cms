@@ -18,6 +18,7 @@ export class ModalPage {
   title:any="Title";
   description:any="Description";
   image:any;
+  options:any="events";
   constructor(public navCtrl: NavController, public navParams: NavParams,public viewCtrl: ViewController) {
   }
 

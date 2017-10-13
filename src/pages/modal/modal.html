@@ -1,8 +1,6 @@
 <ion-header>
     <ion-navbar color="unimy">
-      <button ion-button menuToggle color="light">
-        <ion-icon name="menu"></ion-icon>
-      </button>
+   
       <ion-title>Club Communities</ion-title>
       <ion-buttons end>
           <button ion-button menuToggle color="light" (tap)="dismiss();">
@@ -14,6 +12,19 @@
   </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  <div class="top-container">
+<img src="assets/img/esports.jpg" class="img-bg">
+  </div>
+  <ion-segment [(ngModel)]="options" color="unimy">
+      <ion-segment-button value="events">
+        Events
+      </ion-segment-button>
+      <ion-segment-button value="discussions">
+        Discussions
+      </ion-segment-button>
+      <ion-segment-button value="Photos">
+          Photos
+        </ion-segment-button>
+    </ion-segment>
 </ion-content>
